@@ -99,43 +99,17 @@ for libero_suite in libero_suites:
         # print(language, "\n", f"{task}.bddl", "\n")
         # print("")
 
+suite_order = ["libero_spatial", "libero_object", "libero_goal", "libero_10", "libero_90"]
+task_num = [2402, 2518, 2591, 2519, 90]
+task_order_dict = dict()
 
-task_orders_ori = [
-    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-    [4, 6, 8, 7, 3, 1, 2, 0, 9, 5],
-    [6, 3, 5, 0, 4, 2, 9, 1, 8, 7],
-    [7, 4, 3, 0, 8, 1, 2, 5, 9, 6],
-    [4, 5, 6, 3, 8, 0, 2, 7, 1, 9],
-    [1, 2, 3, 0, 6, 9, 5, 7, 4, 8],
-    [3, 7, 8, 1, 6, 2, 9, 4, 0, 5],
-    [4, 2, 9, 7, 6, 8, 5, 1, 3, 0],
-    [1, 8, 5, 4, 0, 9, 6, 7, 2, 3],
-    [8, 3, 6, 4, 9, 5, 1, 2, 0, 7],
-    [6, 9, 0, 5, 7, 1, 2, 8, 3, 4],
-    [6, 8, 3, 1, 0, 2, 5, 9, 7, 4],
-    [8, 0, 6, 9, 4, 1, 7, 3, 2, 5],
-    [3, 8, 6, 4, 2, 5, 0, 7, 1, 9],
-    [7, 1, 5, 6, 3, 2, 8, 9, 4, 0],
-    [2, 0, 9, 5, 3, 6, 8, 7, 1, 4],
-    [3, 5, 9, 6, 2, 4, 8, 7, 1, 0],
-    [7, 6, 5, 9, 0, 3, 4, 2, 8, 1],
-    [2, 5, 0, 9, 3, 1, 6, 4, 8, 7],
-    [3, 5, 1, 2, 7, 8, 6, 0, 4, 9],
-    [3, 4, 1, 9, 7, 6, 8, 2, 0, 5],
-]
-
-
-task_orders = [list(range(0,3500))]
-for _ in range(19):
-    order = list(range(0,3500))
-    random.shuffle(order)
-    task_orders.append(order)
-
-task_orders_2 = [list(range(0,14000))]
-for _ in range(19):
-    order = list(range(0,14000))
-    random.shuffle(order)
-    task_orders_2.append(order)
+for idx in range(5):
+    task_orders = [list(range(0,task_num[idx]))]
+    for _ in range(19):
+        order = list(range(0,task_num[idx]))
+        random.shuffle(order)
+        task_orders.append(order)
+    task_order_dict[suite_order[idx]] = task_orders
 
 class Benchmark(abc.ABC):
     """A Benchmark."""
@@ -146,14 +120,8 @@ class Benchmark(abc.ABC):
 
     def _make_benchmark(self):
         tasks = list(task_maps[self.name].values())
-        if self.name == "libero_90":
-            self.tasks = tasks
-        elif self.name == "libero_mix":
-            print(f"[info] using task orders {task_orders_2[self.task_order_index]}")
-            self.tasks = [tasks[i] for i in task_orders_2[self.task_order_index]]
-        else:
-            print(f"[info] using task orders {task_orders[self.task_order_index]}")
-            self.tasks = [tasks[i] for i in task_orders[self.task_order_index]]
+        print(f"[info] using task orders {task_order_dict[self.name][self.task_order_index]}")
+        self.tasks = [tasks[i] for i in task_order_dict[self.name][self.task_order_index]]
         self.n_tasks = len(self.tasks)
 
     def get_num_tasks(self):

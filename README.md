@@ -8,9 +8,9 @@ LIBERO-Plus: A Generalized Benchmark for In-depth Robustness Analysis of Vision-
 </p>
 
 <p align="center">
-    <a href="">Senyu Fei</a>, 
-    <a href="">Siyin Wang</a>, 
-    <a href="">Junhao Shi</a>, 
+    <a href="">Senyu Fei*</a>, 
+    <a href="">Siyin Wang*</a>, 
+    <a href="">Junhao Shi*</a>, 
     <a href="">Zihao Dai</a>, 
     <a href="">Jikun Cai</a>, 
     <a href="">Pengfang Qian</a>, 
@@ -25,7 +25,7 @@ LIBERO-Plus: A Generalized Benchmark for In-depth Robustness Analysis of Vision-
 <p align="center">Fudan University, Tongji University, Shanghai Innovation Institute</p>
 
 ## 🔥 Overview
-This repository contains the official implementation and benchmark for our paper "In-depth Robustness Analysis for Vision-Language-Action Models". We systematically expose the hidden vulnerabilities of contemporary VLA models through comprehensive robustness evaluation across seven perturbation dimensions. You can simply replace the original `libero` with a `pip install` without modifying your code.
+This repository contains the official implementation and benchmark for our paper "In-depth Robustness Analysis for Vision-Language-Action Models". We systematically expose the hidden vulnerabilities of contemporary VLA models through comprehensive robustness evaluation across seven perturbation dimensions. You can simply replace the original `libero` with a `pip install -e .` without modifying your code.
 
 ## 🚀 Key Findings
 - **Significant Fragility**: VLA models exhibit extreme sensitivity to camera viewpoints and robot initial states, with performance dropping from 95% to below 30% under modest perturbations
@@ -75,7 +75,7 @@ apt-get install libmagickwand-dev
 pip install -r extra_requirements.txt
 ```
 
-## 🚀 Evaluation
+## 🔧 Evaluation
 The evaluation method is almost identical to `LIBERO`. The only required modification is adjusting `num_trials_per_task` from 50 to 1 in your configuration.
 
 ## Citation
