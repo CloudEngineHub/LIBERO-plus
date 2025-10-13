@@ -4,15 +4,25 @@ LIBERO-Plus: A Generalized Benchmark for In-depth Robustness Analysis of Vision-
 
 <p align="center">
   📄 <a href="7085_In_depth_Robustness_Analy.pdf"><strong>Paper</strong></a> |  
-  🏗️ <a href="https://anonymous.4open.science/r/LIBERO-plus-522F"><strong>Code & Benchmark</strong></a>
+  🏗️ <a href="https://anonymous.4open.science/r/LIBERO-plus-522F"><strong>Assets</strong></a>
 </p>
 
 <p align="center">
-    <a href="">*</a>, 
-    <a href="">*</a>, 
-    <a href="">*</a>, 
+    <a href="">Senyu Fei</a>, 
+    <a href="">Siyin Wang</a>, 
+    <a href="">Junhao Shi</a>, 
+    <a href="">Zihao Dai</a>, 
+    <a href="">Jikun Cai</a>, 
+    <a href="">Pengfang Qian</a>, 
+    <a href="">Li Ji</a>, 
+    <a href="">Xinzhe He</a>, 
+    <a href="">Shiduo Zhang</a>, 
+    <a href="">Zhaoye Fei</a>, 
+    <a href="">Jinlan Fu</a>, 
+    <a href="">Jingjing Gong</a>, 
+    <a href="">Xipeng Qiu</a>
 </p>
-<p align="center">111</p>
+<p align="center">Fudan University, Tongji University, Shanghai Innovation Institute</p>
 
 ## 🔥 Overview
 This repository contains the official implementation and benchmark for our paper "In-depth Robustness Analysis for Vision-Language-Action Models". We systematically expose the hidden vulnerabilities of contemporary VLA models through comprehensive robustness evaluation across seven perturbation dimensions. You can simply replace the original `libero` with a `pip install` without modifying your code.
@@ -51,11 +61,6 @@ cd LIBERO-plus
 
 If you have LIBERO installed, please uninstall or remove it first. Please verify if the repo path in the following configuration file needs to be updated to path_to_liberoplus_repo。
 Here are the default paths for the configuration files: `/root/.libero/config.yaml`. You can check your `libero_config_path` at `path_to_your_LIBERO_repo/libero/libero/__init__.py`.
-```bash
-# check the following path
-ls /root/.libero/config.yaml
-# 
-```
 
 Then install our new LIBERO repository
 ```bash
