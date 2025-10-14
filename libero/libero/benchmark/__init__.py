@@ -78,7 +78,6 @@ libero_suites = [
     "libero_goal",
     "libero_90",
     "libero_10",
-    "libero_mix",
 ]
 task_maps = {}
 max_len = 0

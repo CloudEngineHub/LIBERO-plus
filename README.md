@@ -59,7 +59,7 @@ git clone https://github.com/sylvestf/LIBERO-plus.git
 cd LIBERO-plus
 ```
 
-If you have LIBERO installed, please uninstall or remove it first. Please verify if the repo path in the following configuration file needs to be updated to path_to_liberoplus_repo。
+If you have LIBERO installed, please uninstall or remove it first. Please verify if the repo path in the following configuration file needs to be updated to path_to_liberoplus_repo.
 Here are the default paths for the configuration files: `/root/.libero/config.yaml`. You can check your `libero_config_path` at `path_to_your_LIBERO_repo/libero/libero/__init__.py`.
 
 Then install our new LIBERO repository
