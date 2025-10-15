@@ -3,8 +3,9 @@ LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models
 </h1>
 
 <p align="center">
-  📄 <a href="7085_In_depth_Robustness_Analy.pdf"><strong>Paper</strong></a> |  
-  🏗️ <a href="https://anonymous.4open.science/r/LIBERO-plus-522F"><strong>Assets</strong></a>
+  📄 <a href="https://github.com/sylvestf/LIBERO-plus"><strong>Paper</strong></a> |  
+  🏗️ <a href="https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main"><strong>Assets</strong></a>
+  🌐 <a href="https://github.com/sylvestf/LIBERO-plus"><strong>Website</strong></a>
 </p>
 
 
@@ -58,6 +59,27 @@ apt install libpython3-stdlib
 apt-get install libmagickwand-dev
 pip install -r extra_requirements.txt
 ```
+
+Please download our assets from [LIBERO-plus](https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main), including hundreds of new objects, textures, and other required assets. Please unzip the `assets.zip` file to `/LIBERO-plus/libero/libero` path.
+The extracted directory structure should look like:
+
+```text
+LIBERO-plus/
+└── libero/
+    └── libero/
+        └── assets/
+            ├── articulated_objects/
+            ├── new_objects/
+            ├── scenes/
+            ├── stable_hope_objects/
+            ├── stable_scanned_objects/
+            ├── textures/
+            ├── turbosquid_objects/
+            ├── serving_region.xml
+            ├── wall_frames.stl
+            └── wall.xml
+```
+
 
 ## 🔧 Evaluation
 The evaluation method is almost identical to `LIBERO`. The only required modification is adjusting `num_trials_per_task` from 50 to 1 in your configuration.
