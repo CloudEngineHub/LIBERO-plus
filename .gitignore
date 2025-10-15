@@ -13,7 +13,6 @@ gpt/
 bert/
 logs/
 custom_pddl/
-*.mp4
 libero.egg-info/
 .vscode/
 libero/libero/assets/
