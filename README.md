@@ -8,6 +8,7 @@ LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models
   🌐 <a href="https://sylvestf.github.io/LIBERO-plus"><strong>Website</strong></a>
 </p>
 
+![libero-plus](./static/images/libero-plus.jpg)
 
 ## 🔥 Overview
 This repository contains the official implementation and benchmark for our paper "In-depth Robustness Analysis for Vision-Language-Action Models". We systematically expose the hidden vulnerabilities of contemporary VLA models through comprehensive robustness evaluation across seven perturbation dimensions. You can simply replace the original `libero` with a `pip install -e .` without modifying your code.
