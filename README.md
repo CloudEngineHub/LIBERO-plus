@@ -1,5 +1,5 @@
 <h1 align="center">
-LIBERO-Plus: A Generalized Benchmark for In-depth Robustness Analysis of Vision-Language-Action Models
+LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models
 </h1>
 
 <p align="center">
@@ -7,22 +7,6 @@ LIBERO-Plus: A Generalized Benchmark for In-depth Robustness Analysis of Vision-
   🏗️ <a href="https://anonymous.4open.science/r/LIBERO-plus-522F"><strong>Assets</strong></a>
 </p>
 
-<p align="center">
-    <a href="">Senyu Fei*</a>, 
-    <a href="">Siyin Wang*</a>, 
-    <a href="">Junhao Shi*</a>, 
-    <a href="">Zihao Dai</a>, 
-    <a href="">Jikun Cai</a>, 
-    <a href="">Pengfang Qian</a>, 
-    <a href="">Li Ji</a>, 
-    <a href="">Xinzhe He</a>, 
-    <a href="">Shiduo Zhang</a>, 
-    <a href="">Zhaoye Fei</a>, 
-    <a href="">Jinlan Fu</a>, 
-    <a href="">Jingjing Gong</a>, 
-    <a href="">Xipeng Qiu</a>
-</p>
-<p align="center">Fudan University, Tongji University, Shanghai Innovation Institute</p>
 
 ## 🔥 Overview
 This repository contains the official implementation and benchmark for our paper "In-depth Robustness Analysis for Vision-Language-Action Models". We systematically expose the hidden vulnerabilities of contemporary VLA models through comprehensive robustness evaluation across seven perturbation dimensions. You can simply replace the original `libero` with a `pip install -e .` without modifying your code.
