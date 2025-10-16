@@ -84,6 +84,29 @@ LIBERO-plus/
             └── wall.xml
 ```
 
+## 📊 LIBERO-Plus Benchmark Leaderboard
+| Model | Camera | Robot | Language | Light | Background | Noise | Layout | Total |
+|-------|--------|-------|----------|-------|------------|-------|--------|-------|
+| OpenVLA | 0.8 | 3.5 | 23.0 | 8.1 | 50.4 | 15.2 | 28.5 | 17.3 |
+| OpenVLA-OFT | 56.4 | 31.9 | 79.5 | 88.7 | 97.3 | 75.8 | 74.2 | 70.0 |
+| OpenVLA-OFT_w | 10.4 | 38.7 | 70.5 | 76.8 | 99.2 | 49.9 | 69.9 | 56.4 |
+| NORA | 2.2 | 37.0 | 65.1 | 45.7 | 65.5 | 12.8 | 62.1 | 39.8 |
+| WorldVLA | 0.1 | 27.9 | 41.6 | 43.7 | 19.8 | 10.9 | 38.0 | 25.3 |
+| UniVLA | 1.8 | 46.2 | 69.6 | 69.0 | 90.7 | 21.2 | 31.9 | 43.9 |
+| π₀ | 13.8 | 6.0 | 58.8 | 85.0 | 90.7 | 79.0 | 68.9 | 54.6 |
+| π₀-Fast | 65.1 | 21.6 | 61.0 | 73.2 | 97.7 | 74.4 | 68.8 | 64.2 |
+| RIPT-VLA | 55.2 | 31.2 | 77.6 | 88.4 | **100.0** | 73.5 | 74.2 | 69.3 |
+| OpenVLA-OFT_m | 55.6 | 21.7 | 81.0 | 92.7 | 92.3 | 78.6 | 68.7 | 68.1 |
+| **OpenVLA-OFT+ (Ours)** | **92.8** | **30.3** | **85.8** | **94.9** | 93.9 | **89.3** | **77.6** | **79.6** |
+
+- **OpenVLA-OFT+** shows the performance of [OpenVLA-OFT with a mix-sft on LIBERO-plus dataset](https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata/tree/main).
+- **OpenVLA-OFT_w** shows the performance of OpenVLA-OFT without wrist observation input.
+- **OpenVLA-OFT_m** shows the performance of [OpenVLA-OFT with a mix-sft](https://huggingface.co/moojink/openvla-7b-oft-finetuned-libero-spatial).
+
+### Origin LIBERO Benchmark Leaderboard
+
+To make it easier to get all the results in one place, we've compiled the evaluation results of current VLA models on the original LIBERO benchmark in this [table](./libero_res.md).
+
 
 ## 🔧 Evaluation
 The evaluation method is almost identical to `LIBERO`. The only required modification is adjusting `num_trials_per_task` from 50 to 1 in your configuration.
