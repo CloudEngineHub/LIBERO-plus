@@ -84,6 +84,9 @@ LIBERO-plus/
             └── wall.xml
 ```
 
+## 🔧 Evaluation
+The evaluation method is almost identical to `LIBERO`. The only required modification is adjusting `num_trials_per_task` from 50 to 1 in your configuration.
+
 ## 📊 LIBERO-Plus Benchmark Leaderboard
 | Model | Camera | Robot | Language | Light | Background | Noise | Layout | Total |
 |-------|--------|-------|----------|-------|------------|-------|--------|-------|
@@ -107,9 +110,6 @@ LIBERO-plus/
 
 To make it easier to get all the results in one place, we've compiled the evaluation results of current VLA models on the original LIBERO benchmark in this [table](./libero_res.md).
 
-
-## 🔧 Evaluation
-The evaluation method is almost identical to `LIBERO`. The only required modification is adjusting `num_trials_per_task` from 50 to 1 in your configuration.
 
 ## Citation
 If you find this work useful for your research, please cite our paper:
