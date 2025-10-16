@@ -3,7 +3,7 @@ LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models
 </h1>
 
 <p align="center">
-  📄 <a href="https://github.com/sylvestf/LIBERO-plus"><strong>Paper</strong></a> |   
+  📄 <a href="https://arxiv.org/pdf/2510.13626v1"><strong>Paper</strong></a> |   
   🏗️ <a href="https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main"><strong>Assets</strong></a> | 
   🌐 <a href="https://sylvestf.github.io/LIBERO-plus"><strong>Website</strong></a>
 </p>
@@ -89,13 +89,10 @@ The evaluation method is almost identical to `LIBERO`. The only required modific
 ## Citation
 If you find this work useful for your research, please cite our paper:
 ```bibtex
-@misc{ ,
-      title={WIn-depth Robustness Analysis for Vision-Language-Action Models}, 
-      author={ },
-      year={2025},
-      eprint={ },
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={ }, 
+@article{fei25libero-plus,
+    title={LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models},
+    author={Senyu Fei and Siyin Wang and Junhao Shi and Zihao Dai and Jikun Cai and Pengfang Qian and Li Ji and Xinzhe He and Shiduo Zhang and Zhaoye Fei and Jinlan Fu and Jingjing Gong and Xipeng Qiu},
+    journal = {arXiv preprint arXiv:2510.13626},
+    year={2025},
 }
 ```
