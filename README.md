@@ -63,7 +63,7 @@ apt-get install libmagickwand-dev
 pip install -r extra_requirements.txt
 ```
 
-Please download our assets from [LIBERO-plus](https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main), including hundreds of new objects, textures, and other required assets. Please unzip the `assets.zip` file to `/LIBERO-plus/libero/libero` path. You can also find the [training dataset](https://huggingface.co/datasets/Sylvest/libero_plus_rlds/tree/main) mentioned in our paper and the [OpenVLA-OFT weights after mix-SFT](https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata/tree/main) on this dataset.
+Please download our assets from [LIBERO-plus](https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main), including hundreds of new objects, textures, and other required assets. Please unzip the `assets.zip` file to `/LIBERO-plus/libero/libero` path. You can also find the [RLDS training dataset](https://huggingface.co/datasets/Sylvest/libero_plus_rlds/tree/main) mentioned in our paper and the [OpenVLA-OFT weights after mix-SFT](https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata/tree/main) on this dataset. We also provide [LEROBOT training dataset](https://huggingface.co/datasets/Sylvest/libero_plus_lerobot) and [training dataset for each suite](https://huggingface.co/datasets/Sylvest/libero_plus_data_4suite/tree/main).
 
 The extracted directory structure should look like:
 
