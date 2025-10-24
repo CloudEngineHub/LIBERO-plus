@@ -18,11 +18,11 @@
 | FLOWER | 97.1 | 96.7 | 95.6 | 93.5 | 93.2 | [PDF](https://openreview.net/pdf?id=ifo8oWSLSq) | [Checkpoint](https://huggingface.co/mbreuss/flower_libero_object) | [GitHub](https://github.com/intuitive-robots/flower_vla_calvin) | 3rd, lang |
 | NORA-Fine-tuned-AC | 85.6 | 89.4 | 80 | 63 | 79.5 | [PDF](https://www.arxiv.org/pdf/2504.19854) | [Checkpoint](https://huggingface.co/declare-lab/nora) | [GitHub](https://github.com/declare-lab/nora) | 3rd, lang |
 | NORA-Long-Fine-tuned | 92.2 | 95.4 | 89.4 | 74.6 | 87.9 | [PDF](https://www.arxiv.org/pdf/2504.19854) | [Checkpoint](https://huggingface.co/declare-lab/nora-long) | [GitHub](https://github.com/declare-lab/nora) | 3rd, lang |
-| TraceVLA | 84.6/0.2 | 85.2/0.4 | 75.1/0.3 | 54.1/1 | 74.8/0.4 | [PDF](https://arxiv.org/pdf/2412.10345) |  | - | 3rd, lang, visual trace |
+| TraceVLA | 84.6 | 85.2 | 75.1 | 54.1 | 74.8 | [PDF](https://arxiv.org/pdf/2412.10345) |  | - | 3rd, lang, visual trace |
 | WorldVLA-512×512 | 87.6 | 96.2 | 83.4 | 60.0 | 81.8 | [PDF](https://arxiv.org/pdf/2506.21539) | [Checkpoint](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA) | [GitHub](https://github.com/alibaba-damo-academy/WorldVLA) | 3rd, lang |
 | WorldVLA-256×256 | 85.6 | 89.0 | 82.6 | 59.0 | 79.1 | [PDF](https://arxiv.org/pdf/2506.21539) | [Checkpoint](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA) | [GitHub](https://github.com/alibaba-damo-academy/WorldVLA) | 3rd, lang |
 | ThinkAct | 88.3 | 91.4 | 87.1 | 70.9 | 84.4 | [PDF](https://arxiv.org/pdf/2507.16815) | - | - | 3rd, lang, prop |
-| Otter | 84/1 | 89/1.2 | 82/1 | 59/0.8 | 85/1.1 | [PDF](https://arxiv.org/pdf/2503.03734) | - | [GitHub](https://github.com/Max-Fu/otter) | 3rd, lang, prop |
+| Otter | 84 | 89 | 82 | 59 | 85 | [PDF](https://arxiv.org/pdf/2503.03734) | - | [GitHub](https://github.com/Max-Fu/otter) | 3rd, lang, prop |
 | RIPT-VLA | 99.0 | 98.6 | 98.6 | 93.8 | 97.5 | [PDF](https://www.arxiv.org/pdf/2505.17016) | [Checkpoint](https://huggingface.co/tanshh97/RIPT_VLA/tree/main) | [GitHub](https://github.com/Ariostgx/ript-vla) | 3rd, lang |
 
 ### 📝 Notes:
