@@ -3,7 +3,7 @@ LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models
 </h1>
 
 <p align="center">
-  📄 <a href="https://arxiv.org/pdf/2510.13626v1"><strong>Paper</strong></a> |   
+  📄 <a href="https://arxiv.org/pdf/2510.13626"><strong>Paper</strong></a> |   
   🏗️ <a href="https://huggingface.co/datasets/Sylvest/LIBERO-plus/tree/main"><strong>Assets</strong></a> | 
   🌐 <a href="https://sylvestf.github.io/LIBERO-plus"><strong>Website</strong></a> | 
   🤗 <a href="https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata"><strong>Model</strong></a> | 
